@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefes Al | YKS Nefes Egzersizleri — Mertali Demir</title>
+    <meta name="description" content="YKS öğrencileri için 4-7-8 ve 4-4-4-4 kare nefes egzersizlerini görsel zamanlayıcıyla takip edebileceğiniz ücretsiz web uygulaması.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YKS Nefes Egzersizleri</h1>
+        <p class="description">
+            Sınav hazırlığında kısa bir mola verin.
+            4-7-8 ve kare nefes egzersizlerini görsel yönlendirmelerle kendi hızınızda takip edin.
+        </p>
+        
+        <div class="exercise-buttons">
+            <button type="button" id="technique478" aria-pressed="false">4-7-8 Tekniği</button>
+            <button type="button" id="techniqueSquare" aria-pressed="false">Kare Nefes</button>
+            <button type="button" id="fullscreenBtn">Tam Ekran</button>
+        </div>
+        
+        <div class="breath-animation">
+            <div class="circle" id="circle"></div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="instructions" id="instructions" role="status" aria-live="polite">Teknik seçin</div>
+            <div class="timer" id="timer" aria-live="off">--</div>
+        </div>
+        <p class="notice" id="notice" role="status" aria-live="polite"></p>
+    </div>
+
+   <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://www.instagram.com/mertalidemircom/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/mertmir" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+        <p>© 2024 TermDigital | Tüm Hakları Saklıdır</p>
+        <p><a href="https://mertalidemir.com/" target="_blank" rel="noopener noreferrer">mertalidemir.com</a> · <a href="https://github.com/ironmert" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

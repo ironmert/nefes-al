@@ -1,0 +1,257 @@
+/* Genel Stiller */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5eeff 0%, #e9dbff 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+    width: 90%;
+    flex: 1;
+}
+
+h1 {
+    color: #6b46c1;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #6b46c1;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Butonlar */
+.exercise-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+button {
+    background: #9f7aea;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(159, 122, 234, 0.3);
+}
+
+button:hover {
+    background: #805ad5;
+    transform: translateY(-3px);
+}
+
+/* Animasyon */
+.breath-animation {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: #b794f4;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 30px rgba(159, 122, 234, 0.4);
+}
+
+/* Bilgi Paneli */
+.info-panel {
+    margin-top: 40px;
+}
+
+.instructions {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6b46c1;
+    margin-bottom: 15px;
+    min-height: 36px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #6b46c1;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #6b46c1 0%, #8a4fff 100%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #d9b8ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.tagline {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 16px !important;
+    opacity: 0.9;
+}
+
+/* Tam Ekran Modu */
+body.fullscreen {
+    padding: 0;
+}
+
+body.fullscreen .container {
+    width: 100%;
+    height: 100dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+body.fullscreen h1,
+body.fullscreen .description,
+body.fullscreen .notice,
+body.fullscreen .exercise-buttons {
+    display: none;
+}
+
+body.fullscreen .breath-animation {
+    width: 80vmin;
+    height: 80vmin;
+}
+
+body.fullscreen .circle {
+    width: 40vmin;
+    height: 40vmin;
+}
+
+body.fullscreen .info-panel {
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+}
+
+body.fullscreen #exitFullscreen {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(107, 70, 193, 0.7);
+    backdrop-filter: blur(5px);
+}
+/* Footer Sosyal Medya Stilleri */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.social-icon:hover {
+    color: #d9b8ff;
+    transform: translateY(-2px);
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    .breath-animation {
+        width: 250px;
+        height: 250px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    .tagline {
+        font-size: 14px !important;
+    }
+}
+/* Erişilebilirlik, durum mesajları ve tam ekran düzeltmeleri */
+.notice {
+    min-height: 1.5em;
+    color: #6b46c1;
+    font-size: 14px;
+    margin: 8px auto 0;
+}
+
+button:focus-visible, a:focus-visible {
+    outline: 3px solid #6b46c1;
+    outline-offset: 3px;
+}
+
+button[aria-pressed="true"] {
+    background: #6b46c1;
+    box-shadow: 0 0 0 2px #d6bcfa;
+}
+
+body.fullscreen footer {
+    display: none;
+}
+
+body.fullscreen #exitFullscreen {
+    z-index: 10;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .circle, button, body, .social-icon {
+        transition: none;
+    }
+    button:hover, .social-icon:hover {
+        transform: none;
+    }
+}

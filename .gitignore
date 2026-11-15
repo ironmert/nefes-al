@@ -1,0 +1,22 @@
+# Plesk / SSL validation files
+.well-known/
+
+# Secrets, local environment and server files
+.env
+.env.*
+!.env.example
+*.sql
+*.sqlite
+*.sqlite3
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dependencies / generated artifacts (if added later)
+node_modules/
+dist/
+build/
