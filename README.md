@@ -67,7 +67,7 @@ Bu uygulama genel amaçlı bir nefes egzersizi aracıdır; tıbbi tanı veya ted
 
 ## 👨‍💻 Geliştirici
 
-**Mertali Demir** · [Web sitesi](https://mertalidemir.com/) · [GitHub](https://github.com/ironmert) · [LinkedIn](https://www.linkedin.com/in/mertmir)
+**Mert Demir** · [Web sitesi](https://mertalidemir.com/) · [GitHub](https://github.com/ironmert) · [LinkedIn](https://www.linkedin.com/in/mertmir)
 
 **Telif bilgisi:** Uygulamanın alt kısmındaki `© 2024 TermDigital | Tüm Hakları Saklıdır` ibaresi talep edildiği şekilde korunmuştur.
 
